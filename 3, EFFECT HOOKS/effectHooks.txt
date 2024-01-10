@@ -1,0 +1,20 @@
+EFFECT HOOKS 
+    - hooks yang digunakan untuk menambahkan side effect dikomponen,misalkan fetching api,interaksi dengan DOM, dll
+    - effect hooks akan dirunnning setiap komponen melakuakan rendering
+    - namun kita bisa mengatur running dari effect hooks dengan menambahkan parameter kedua yang merupakan array
+    - ada 3 penggunaan effect hooks di react
+        1. useEffect
+        2. useLayoutEffect
+        3. useInsertionEffect
+
+EFFECT HOOKS : DIFF
+    - useEffect : aktif setelah komponen sudah berhasil dirender
+    - useLayoutEffect : aktif sebelum komponen di rendering
+    - useInsertionEffect : aktif sebelum react membuat perubahan terhadap dom nya
+
+KESIMPULAN : 
+    useInsertionEffect: jadi useInsertionEffect lebih duluan dijalankan karena sebelum react memanipulasi dom nya useInsertionEffect sudah dijalankan
+
+    useLayoutEffect: useLayoutEffect dijalankan sebelum komponen dirender
+
+    useEffect: dijalankan ketika semua komponen sudah dirender pada dom

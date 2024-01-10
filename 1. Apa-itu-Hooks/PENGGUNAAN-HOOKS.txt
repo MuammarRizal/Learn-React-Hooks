@@ -1,0 +1,3 @@
+PENGGUNAAN HOOKS
+    - ada 2 cara penggunaan hooks, yaitu dengan menggunakan built-in hooks yaitu hook bawaan dari react
+    - custom hooks, dimana kita dapat menggabungkan built in hooks dan membuat hooks yang sesuai dengan yang kita butuhkan

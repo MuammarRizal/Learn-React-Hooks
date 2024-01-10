@@ -1,0 +1,5 @@
+APA ITU HOOKS ? 
+    -hooks baru ditambahkan pada react version 16.8 dan sekarang udah versi ke 18.2
+    - hooks merupakan fungsi untuk mengaitkan state dan fitur fitur lifecycle react pada functional component
+    - hooks hanya dapat digunakan di functional tidak bergungsi pada class component
+

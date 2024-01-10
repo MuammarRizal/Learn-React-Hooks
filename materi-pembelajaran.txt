@@ -1,0 +1,34 @@
+MATERI 
+1. APA ITU HOOKS ? 
+    - ALASAN/IDE HOOKS DIBUAT
+    - PENGGUNAAN HOOKS
+    - BUILT-IN HOOKS DI REACT
+
+2. STATE HOOKS
+    - useState
+    - useReducer
+    - Perbandingan useState dan useReducer
+
+3. EFFECT HOOKS
+4. EFFECT HOOKS : DIFF
+    - useEffect
+    - useLayoutEffect
+    - useInsertionEffect
+      * perbedaan dari 3 ini apa aja
+
+5. CONTEXT HOOKS
+    - useContext
+
+6. REF HOOKS
+    - useRef
+    - useImperativeHandle
+
+7. PERFORMANCE HOOKS ini berguna untuk meningkatkan performa pada aplikasi/code kita
+    - useMemo
+    - useCallback
+
+8. OTHER HOOKS
+    - useDebugValue
+    - useId
+    - useSyncExternalStore
+

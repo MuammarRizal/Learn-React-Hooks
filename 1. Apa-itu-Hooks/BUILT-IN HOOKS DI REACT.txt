@@ -1,0 +1,5 @@
+STATE HOOKS 
+    - State membuat komponen mengingat informasi,jadi bisa digunakan sebagai penyimpanan sementara
+    - karena penyimpanan sementara jadi ketika dilakukan refresh page, state akan kembali ke kondisi default
+    - state juga biasa digunakan untuk membuat page dinamis atau interaksi aplikasi dengan user menggunakan event handler.
+    - ada 2 cara menggunakan state di react yaitu useState dan useReducer

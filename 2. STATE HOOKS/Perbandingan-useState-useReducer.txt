@@ -1,0 +1,11 @@
+STATE HOOKS : Perbandingan useState dan useReducer
+
+- useState
+    1. Penggunaan state yang sederhana useState lebih menguntungkan karena tidak menulis banyak kode 
+    2. Untuk kasus yang sederhana useState lebih gampang dibaca dan mudah melakukan debugging, sedangkan kasus kompleks dengan logic yang cukup rumit dan panjang useState terkadang sulit dipahami kembali karena komponen akan menjadi banyak.
+    3. useState melekat pada komponen nya sendiri
+
+- useReducer
+    1. useReducer cenderung digunakan apabila menggunakan banyak event handler
+    2. useReducer bisa mempersulit pada kasus sederhana, dan mempermudah kasus yang sulit, sehingga proses debugging lebih mudah
+    3. reducer dapat dipecah dari komponen sehingga terkadang memudahkan proses testing, debugging,dan membuat code kita lebih clean

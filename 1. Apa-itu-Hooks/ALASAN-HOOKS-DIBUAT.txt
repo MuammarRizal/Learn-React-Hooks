@@ -1,0 +1,6 @@
+ALASAN / IDE HOOKS DIBUAT
+
+    - sulitnya me reuse stateful logic antara komponen
+    - komponen yang sudah complex sulit dimengerti
+    - classes komponen sulit dipelajari,seperti konsep this, atau bind setiap interaksi
+    - classes komponen menimbulkan pola yang memperlambat optimasi
