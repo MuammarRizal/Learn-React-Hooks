@@ -17,4 +17,4 @@ KESIMPULAN :
 
     useLayoutEffect: useLayoutEffect dijalankan sebelum komponen dirender
 
-    useEffect: dijalankan ketika semua komponen sudah dirender pada dom
+    useEffect: dijalankan ketika semua komponen sudah dirender pada dom dan ketika ada perubahan pada komponen dia akan merunning lagi
