@@ -1,0 +1,6 @@
+- ref hooks biasa digunakan dalam melakukan hold information yang tidak dilakukan render
+- ada 2 reff hook yaitu useRef dan useImperativeHandle
+
+use reff biasa digunakan saat ingin mengakses elemen di DOM
+
+dan bisa menyimpan nilai tanpa memicu rerender

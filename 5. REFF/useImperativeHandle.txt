@@ -1,0 +1,3 @@
+useImperativeHandle adalah salah satu hooks dalam react yang digunakan untuk mengontrol nilai yang dikembalikan oleh suatu komponen ketika diakses dari luar.
+
+ini sering digunakan untuk menyembunyikan atau menyesuaikan antarmuka dari komponen anak yang diteruskan melalui ref.

@@ -1,0 +1,4 @@
+PERFORMANCE HOOKS
+    - performance hook berfungsi untuk mengoptimalkan performa rendering,misalkan data tidak berubah maka tidak dilakukan renderer komponen
+    - ada 2 performance hooks yang dapat digunakan di react,useMemo dan useCallback
+     
