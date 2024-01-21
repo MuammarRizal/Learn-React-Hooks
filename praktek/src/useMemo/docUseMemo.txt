@@ -2,3 +2,38 @@ pada komponen useMemo kita memiliki dua state dan tiga function
 
 coba perhatikan function isNumberEvent looping di function tersebut hanya untuk mensimulasikan yang membutuhkan waktu yang cukup lama
 
+nah ketika kita increment state (number) maka itu akan terjadi sedikit delay sebelum uinya di update
+
+seharusnya ini gamasalah dong,iyakan?
+
+yang jadi masalah sekarang adalah ketika state (count) nya di increment
+
+terjadi delay yang sama,padahal kita membuat function isNumberEven untuk membuat state numbernya saja yang delay tapi ini malah state count nya juga terjadi delay yang sama
+
+kenapa begitu ? 
+
+jadi hal itu terjadi karna setiap kali terjadi update baik state number maupun count,maka komponen akan dirender ulang 
+
+yang mana ini akan membuat function isNumberEven ikut di inizialisasi ulang.
+
+nah
+
+untuk mengatasi kasus tersebut kita bisa menggunakan useMemo untuk menchacing hasil dari function isNumberEven
+
+contoh : 
+  const isNumberEven = useMemo(() => {
+    let i = 0;
+    while(i < 200000000)i++
+    return number % 2 === 0
+  },[number])
+
+
+dan jangan lupa mengganti function ini
+<div>{isNumberEven() ? "even" : "odd"}</div>
+
+menjadi
+<div>{isNumberEven ? "even" : "odd"}</div>
+
+karna function isNumberEven ini bukan lagi sebuah function yang harus digunakan menggunakan kurung tutup,soalnya sudah dibungkus menggunakan useMemo (koreksi kalau salah)
+
+dengan begini setiap kali kita increment count maka tidak akan terjadi delay lagi.
