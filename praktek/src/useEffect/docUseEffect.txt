@@ -1,0 +1,12 @@
+USE EFFECT 
+React hooks useEffect digunakan untuk menambahkan side effect ke function komponen
+
+penggunaan useEffect mirip dengan lifeCycle method seperti componentDidMount,componentDidUpdate,dan componentWillMount di class komponent
+
+useEffect hooks akan menerima dua parameter, yaitu sebuah callback dan sebuah array.
+
+Array di parameter kedua ini, bisa di isi atau bisa juga dikosongkan.
+
+useEffect akan di jalankan setiap kali item di dalam array tersebut berubah.
+
+Kalau arraynya kosong, maka useEffect akan dijalankan sekali saja, yaitu saat komponen pertama kali di render.
