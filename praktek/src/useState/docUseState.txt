@@ -1,0 +1,8 @@
+Use State
+React hooks useState di gunakan untuk membuat state di function komponen.
+
+Fungsi useState akan mereturn pasangan nilai dari state dan fungsi untuk mengubah state tersebut dalam bentuk sebuah array.
+
+Item pertama adalah statenya
+
+Item keduanya adalah fungsi untuk mengubah state tersebut, fungsi ini mirip seperti setState di class komponen.
