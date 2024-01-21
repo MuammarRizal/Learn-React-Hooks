@@ -1,0 +1,50 @@
+USE REFF
+React hooks useRef umumnya digunakan untuk mengakses DOM node kedalam sebuah komponen
+
+misalnya kita mau mengakses element input. maka kita bisa menambahkan ref ke element inputnya
+
+import React, { useRef } from "react"
+const Example = () => {
+  const [name, setName] = useState("")
+  const inputRef = useRef()
+  useEffect(() => {
+    inputRef.current.focus()
+  },[])
+  return(
+    <div>
+      <input
+       type="text"
+       ref={inputRef}
+       value={name}
+       placeholer="name"
+      />
+    <div/>
+  )
+}
+export default Example
+
+maksud dari kode diatas adalah untuk membuat element input focus,begitu komponen nya dirender pertama kali
+
+return dari useRef adalah sebuah objek dengan properti current
+
+selain untuk mengakses dom node, useref juga bisa digunakan mirip seperti useState
+
+maksudnya gini
+
+kalau kita menggunakan state sebagai data untuk komponen,setiap terjadi update state maka komponen tersebut akan render ulang
+
+nah,gimana kalau kita gak mau komponen nya dirender ulang kalau ada update dari datanya? 
+
+solusinya kita bisa mengganti useState dengan useRef hooks
+
+Perubahan data tersebut tidak akan membuat komponen di render ulang.
+
+Mungkin kamu akan bertanya…
+
+Kalau gitu, kenapa kita gak make useRef aja biar tidak terjadi render terus menerus ketika datanya berubah?
+
+Sayangnya, perubahan nilai useRef tidak akan berpengaruh ke tampilannya.
+
+Kalau contoh kita diatas, di UI nya akan tetap tampil angka satu sesuai dengan default nilai yang kita kasih pertama kali.
+
+Jadi tidak semua kasus cocok menggunakan useRef.
