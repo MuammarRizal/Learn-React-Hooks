@@ -6,17 +6,20 @@ import UseContext from "./useContext/UseContext";
 import UseReff from "./useReff/UseReff";
 import UseImperativeHandle from "./useImperativeHandle/UseImperativeHandle";
 import UseMemo from "./useMemo/UseMemo";
+import UseState from "./useState/UseState";
 
 function App() {
-  const linkRef = useRef(null);
-  console.log(linkRef);
+  // const linkRef = useRef(null);
+  // console.log(linkRef);
   return (
     <>
-      {/* <h3>Use Reducer</h3>
+      {/*
+       Use Reducer
       <UseReducer />
       <hr />
       <h3>Use Effect</h3>
-      <UseEffect /> */}
+      <UseEffect /> 
+      */}
 
       {/* <UseContext /> */}
 
@@ -28,7 +31,9 @@ function App() {
         click me
       </a> */}
 
-      <UseMemo />
+      {/* <UseMemo /> */}
+
+      <UseState />
     </>
   );
 }
