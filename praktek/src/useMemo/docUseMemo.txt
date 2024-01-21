@@ -1,0 +1,4 @@
+pada komponen useMemo kita memiliki dua state dan tiga function
+
+coba perhatikan function isNumberEvent looping di function tersebut hanya untuk mensimulasikan yang membutuhkan waktu yang cukup lama
+

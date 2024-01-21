@@ -1,0 +1,5 @@
+useMemo digunakan untuk memoize hasil sebuah function,sedangkan React.memo digunakan untuk mencegah sebuah komponen ketika state atau propsnya tidak berubah
+
+memoize adalah sebuah teknik yang digunakan untuk mengoptimalkan sebuah program
+
+caranya adalah dengan menyimpan hasil dari program tersebut.istilah keren nya adalah caching
